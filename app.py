@@ -29,11 +29,12 @@ def standardize_gender(gender):
 
 # Streamlit app
 def main():
-    st.title("Data Cleaning and Transformation App")
-
+  
     # Show image at top
     st.image("image01.png", width=200)  # adjust width as needed
-        
+    
+    st.title("Data Cleaning and Transformation App")
+    
     # File upload
     uploaded_file = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx", "xls"])
 
