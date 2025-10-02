@@ -5,21 +5,6 @@ import io
 import xlsxwriter
 
 
-# Background color using HTML/CSS
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #91C4C3;
-    }
-    .stApp {
-        background-color: #91C4C3;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 
 # Function to categorize age
 def categorize_age(age):
@@ -45,10 +30,6 @@ def standardize_gender(gender):
 # Streamlit app
 def main():
     st.title("Data Cleaning and Transformation App")
-
-    # Add Image
-    image_url = "YOUR_RAW_GITHUB_IMAGE_URL"  # Replace with the raw URL of your image
-    st.image(image_url, caption="Your Image Caption", use_column_width=True)
 
     # File upload
     uploaded_file = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx", "xls"])
