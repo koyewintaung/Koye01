@@ -2,22 +2,6 @@ import streamlit as st
 import pandas as pd
 from collections import Counter
 
-# Function to transform variables into rows
-def transform_variable(df, var_name):
-    value_counts = Counter(df[var_name].dropna())
-    unique_values = sorted(value_counts.keys())
-    
-    transformed_data = {}
-    transformed_data[var_name] = {}
-    
-    for val in unique_values:
-        transformed_data[var_name][val] = 0  # Initialize with 0
-    
-    for index, value in df[var_name].items():
-        if value in transformed_data[var_name]:
-            transformed_data[var_name][value] = 1
-    
-    return transformed_data
 
 # Function to categorize age
 def categorize_age(age):
