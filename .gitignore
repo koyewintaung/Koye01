@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+parts/
+lib/
+lib64/
+sdist/
+wheels/
+*.whl
+doc/_build
+
+# PyInstaller
+**/__pycache__
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Streamlit files
+.streamlit/secrets.toml
+
+# Data files (optional, but often a good idea to exclude)
+data/
+*.csv
+*.xlsx
+*.sqlite
+
+# Log files
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
