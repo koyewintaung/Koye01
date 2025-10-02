@@ -52,7 +52,7 @@ def main():
                 return
 
         st.write("Transformed Data")
-        st.dataframe(df.head())  # Display the first few rows with the new columns
+        st.dataframe(df)
             
         # Create an in-memory buffer
         excel_buffer = io.BytesIO()
@@ -86,7 +86,7 @@ def main():
                 df[value] = df[variable_name].apply(lambda x: 1 if value in str(x).split(', ') else 0)
 
             st.write("Transformed Data")
-            st.dataframe(df.head())  # Display the first few rows with the new columns
+            st.dataframe(df)
         
         # Age categorization
         st.header("Age Categorization")
@@ -94,7 +94,7 @@ def main():
             # Create new 'age_category' column
             df['age_category'] = df['age'].apply(categorize_age)
             st.write("Age Categorized Data")
-            st.dataframe(df.head())  # Display the first few rows with the new column
+            st.dataframe(df)
         else:
             st.write("No 'age' column found.")
 
