@@ -30,7 +30,7 @@ def standardize_gender(gender):
 # Streamlit app
 def main():
   
-    # Show image at top
+    # Show image at beside title
     st.image("image01.png", width=200)  # adjust width as needed
     
     st.title("Data Cleaning and Transformation App")
