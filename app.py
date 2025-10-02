@@ -91,9 +91,10 @@ def main():
         # Age categorization
         st.header("Age Categorization")
         if 'age' in df.columns:
+            # Create new 'age_category' column
             df['age_category'] = df['age'].apply(categorize_age)
             st.write("Age Categorized Data")
-            st.dataframe(df[['age', 'age_category']].head())
+            st.dataframe(df.head())  # Display the first few rows with the new column
         else:
             st.write("No 'age' column found.")
 
