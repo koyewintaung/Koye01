@@ -31,6 +31,9 @@ def standardize_gender(gender):
 def main():
     st.title("Data Cleaning and Transformation App")
 
+    # Show image at top
+    st.image("image01.png", width=200)  # adjust width as needed
+        
     # File upload
     uploaded_file = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx", "xls"])
 
